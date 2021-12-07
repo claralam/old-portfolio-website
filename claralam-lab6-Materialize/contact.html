@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Clara Lam">
+    <meta name="keywords" content="Carnegie Mellon Univeristy, Business Administration">
+    <meta name="description" content="Clara Lam Professional Website">
+    
+    <title>Clara Lam</title>
+    
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <script>
+        $(function () {
+            $('#container-graph').highcharts({
+                chart: {type: 'line'},
+                title: {text: 'Weekly Workload by Month'},
+                xAxis: {categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']},
+                yAxis: {title: {text: 'Average Number of Hours Worked on School Each Week'}},
+                plotOptions: {line: {dataLabels: {enabled: true}, enableMouseTracking: false}},
+                series: [{name: '2020', data: [70.5, 65.0, 50.3, 60.0, 55.4, 25.0, 15.0, 12.2, 60.2, 65.8, 68.4, 78.5]}, 
+                         {name: '2021', data: [16.3, 60.2, 67.5, 70.3, 68.7, 20.5, 16.4, 12.6, 64.2, 68.3, 64.5, 73.2]}]
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Clara Lam</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="content">
+            <h3>Contact</h3>
+            
+              <p>Please us the below map to find me.</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4051580632936!2d-79.94556118394449!3d40.44416876189281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2218bddc99f%3A0xeea6ccadbf7b721e!2sWarner%20Hall%2C%205000%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1617088470330!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+              <p>Please check to see when I'm free.</p>
+
+              <div id="container-graph"></div>
+
+              <p>Please use the following form to get in touch with me.</p>
+              <form onsubmit="return validate()">
+                <fieldset>
+                    <legend>Tell me more about yourself</legend>
+                    <label for="uname">Name:</label><br/>
+                    <input type="text" id="uname" name="uname" value="Your Name" size="20" maxlength="250"><br/><br/>
+
+                    <label for="dob">Your date of birth (required):</label><br/>
+                    <input type="date" id="dob" name="dob" value="" size="20" required><br/><br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tell me about your preferences</legend>
+                    <label for="flower">Your favorite flower color:</label><br/>
+                    <input type="color" id="flower" name="flower"><br/><br/>
+
+                    <label for="message">Message:</label><br/>
+                    <textarea id="message" name="message" rows="10" cols="50" maxlength="1000"></textarea><br/><br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Let's stay in touch</legend>
+                    <div class="input-field col s12">
+                    <select name="source">
+                        <option value="1" selected>Google</option>
+                        <option value="2">News article</option>
+                        <option value="3">Friend</option>
+                        <option value="4">Other</option><br/>
+                    </select>
+                    <label for="source">How did you find out about me?</label>
+                      <br/>
+                    </div>
+                    
+                    <label>
+                    <input type="checkbox" id="joinlist" name="joinlist" />
+                    <span>Please send me updates by email</span>
+                    </label><br/>
+
+                    <label for="email">Please provide your email address:</label><br/>
+                    <input type="email" id="email" name="email" placeholder="abc@defg.com"><br/><br/>
+                    
+                    <label for="phone">Please provide your phone nmber (no dashes or spaces)</label><br/>
+                    <input type="text" id="phone" name="phone" value="" placeholder="1234567890" required><br/><br/>
+
+                    <label for="pswd">Choose a password:</label><br/>
+                    <input type="password" id="pswd" name="pswd" maxlength="20"><br/><br/>
+                </fieldset>
+
+                <fieldset>
+                    <input type="image" src="images/submit.png" alt="Submit button" name="btnimage">
+                </fieldset>
+              </form>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 s12">
+                    <a href="mailto:claralam@andrew.cmu.edu"><img src="images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/clara-lam-79a6ab190/" target="_blank"><img src="images/linkedin.png"></a>
+                    <a href="https://www.facebook.com/clara.lam.3958/" target="_blank"><img src="images/facebook.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; Clara Lam<br/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

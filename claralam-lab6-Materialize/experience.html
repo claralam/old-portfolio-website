@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Clara Lam">
+    <meta name="keywords" content="Carnegie Mellon Univeristy, Business Administration">
+    <meta name="description" content="Clara Lam Professional Website">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Clara Lam</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <script>
+        $(document).ready(function(){
+            $('.collapsible').collapsible();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Clara Lam</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">About</a></li>
+                <li class="active"><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">Case Analysis Project</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Web Development Project</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Database Project</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+        <br><br>
+
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#tab1">Case Analysis Project</a></li>
+                    <li class="tab col s3"><a href="#tab2">Wed Development Project</a></li>
+                    <li class="tab col s3"><a href="#tab3">Database Project</a></li>
+                </ul>
+            </div>
+            <div id="tab1" class="col s12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                    lacinia fermentum massa, vel tincidunt justo feugiat suscipit. 
+                    Proin euismod justo elit, non viverra dui tincidunt eget. Sed convallis 
+                    dignissim purus. Nullam non purus quis mi fringilla consectetur at et odio. 
+                    Aenean efficitur, diam id mollis tempus, nibh metus consectetur dolor, 
+                    eget pretium risus tortor sed purus. Vestibulum interdum auctor nibh sed 
+                    ullamcorper. Ut a nibh turpis. Nullam ullamcorper metus in sem laoreet lobortis.</p>
+            </div>
+            <div id="tab2" class="col s12">
+                <p>Fusce facilisis vestibulum est, sit amet posuere lacus tempus sed. Morbi fringilla 
+                    mauris vitae lorem varius convallis eget ac sapien. Nullam ut cursus lectus, et 
+                    rhoncus metus. Proin pulvinar ultrices sem. Curabitur varius, purus id facilisis 
+                    vehicula, enim ex lobortis tortor, eget condimentum enim dui sit amet orci. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    Vivamus sit amet pharetra orci, id viverra velit.</p>
+            </div>
+            <div id="tab3" class="col s12">
+                <p>Cras hendrerit lectus vel lacinia pellentesque. Aliquam tincidunt, quam id cursus 
+                    eleifend, eros felis ornare velit, at luctus urna tortor congue dui. Morbi neque dui, 
+                    posuere vitae tellus in, commodo egestas tellus. Curabitur condimentum vestibulum erat, 
+                    id ornare nunc rhoncus vitae. Vivamus imperdiet viverra feugiat. Cras scelerisque, elit 
+                    sit amet varius efficitur, elit tellus consequat turpis, a faucibus risus risus a lorem.</p>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th colspan="3">Course Projects</th>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Course</th>
+                <th>Semester</th>
+            </tr>
+            <tr onmouseover="showDescription('In the case analysis project, we analyzed Tesla and described how we could improve their processes.');" onmouseout="hideDescription();">
+                <td>Case Analysis Project</td>
+                <td>67-250</td>
+                <td>Spring 2021</td>
+            </tr>
+            <tr onmouseover="showDescription('In the web development project, we created we real-world website for the Duquesne Incline.');" onmouseout="hideDescription();">
+                <td>Web Development Project</td>
+                <td>67-250</td>
+                <td>Spring 2021</td>
+            </tr>
+            <tr onmouseover="showDescription('In the database project project, we...');" onmouseout="hideDescription();">
+                <td>Database Project</td>
+                <td>67-250</td>
+                <td>Spring 2021</td>
+            </tr>
+        </table>
+        <div id="description"></div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 s12">
+                    <a href="mailto:claralam@andrew.cmu.edu"><img src="images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/clara-lam-79a6ab190/" target="_blank"><img src="images/linkedin.png"></a>
+                    <a href="https://www.facebook.com/clara.lam.3958/" target="_blank"><img src="images/facebook.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; Clara Lam<br/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

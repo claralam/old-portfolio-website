@@ -183,3 +183,13 @@ iframe {
     max-width: 100%;
     height: auto;
 }
+
+.peerdea_screenshot {
+    max-width: 25%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #000000;
+}
+
+.expSection {
+    clear: both
+}

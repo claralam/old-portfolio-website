@@ -92,6 +92,11 @@ a:hover {
     border-right: 1px dotted #ccc;
 }
 
+#content h4 {
+    margin: 20px 0 10px 0;
+    font-size: 1.25em;
+}
+
 h3 {
     font-family: Georgia, serif;
     font-size: 1.5em;
@@ -213,4 +218,21 @@ iframe {
 
 #bio-para {
     padding: 10px 10px 10px 10px;
+}
+
+.experienceCard {
+    border: 1px solid #dbdbdb;
+    border-radius: 25px;
+    background: #dbdbdb;
+    padding: 10px 20px 10px 20px;
+    margin: 30px 0px;
+}
+
+.experienceCard h4 a {
+    display: block;
+}
+
+.experienceCard:hover {
+    box-shadow: 5px 5px #c0c0c0;
+    cursor: pointer;
 }

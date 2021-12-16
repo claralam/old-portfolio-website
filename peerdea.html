@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Clara Lam">
+    <meta name="keywords" content="Carnegie Mellon Univeristy, Information Systems">
+    <meta name="description" content="Clara Lam Professional Website">
+    
+    <title>Clara Lam</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <h1>Clara Lam</h1>
+                <h2>Carnegie Mellon University, Information Systems</h2>
+            </header>
+
+            <nav>
+                <a href="index.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div>
+        <h3>Peerdea</h3>
+        <h4 class="expSection">What is Peerdea?</h4>
+        <div>
+            <p>
+                With more people online than ever, creative small business owners and entrepreneurs are transitioning to social commerce– 
+                selling their products on social media platforms such as Instagram or TikTok. However, there are unique challenges that 
+                come with being an entrepreneur selling on social commerce, as they are often the sole proprietor of their business. One 
+                main challenge they may face is receiving feedback, which is especially important for creative small business owners, as many 
+                of them work alone and may not have the same support as larger corporations. Feedback can help entrepreneurs reflect on their 
+                work, thereby encouraging a growth mindset, as well as help improve their product. Though some entrepreneurs have tried receiving 
+                feedback on their work on large social media platforms, many of them post only late-stage work as they often feel insecure and 
+                uncomfortable sharing original ideas in fear of mockery and intellectual property concerns. However, early-stage feedback is 
+                crucial as it often results in higher quality work than when an idea receives feedback at later stages. Another common reason 
+                large social media platforms are not ideal for feedback is that the audience is too broad for more focused responses, which resulted 
+                in analyses that were not too helpful or relevant.
+            </p>
+            <p>
+                Thus, to alleviate this problem, Peerdea was developed as a native application that allows creative small business owners and 
+                entrepreneurs to remotely exchange feedback in the early stages of their idea development. Users are encouraged to create and 
+                join peer feedback groups, where they can feel safe to share their early-stage ideas and products with peers, who are also likely to 
+                be entrepreneurs undergoing similar struggles. User support features on Peerdea include sentence starters that scaffold to create 
+                high-quality feedback and capped group sizes to ensure small, safe, trustworthy spaces for entrepreneurs. Through Peerdea, entrepreneurs 
+                can seek, give, and receive feedback to better support and grow their creative business endeavors and entrepreneurship overall. 
+            </p>
+            <img class="peerdea_screenshot" src="images/peerdea/share_concept.jpg" alt="Peerdea share concepts page">
+            <img class="peerdea_screenshot" src="images/peerdea/feedback_assist.jpg" alt="Peerdea feedback assistance">
+        </div>
+        
+        <h4 class="expSection">Specific Issues Worked On</h4>
+        <div>
+            <span>
+                <h5>General UI Improvements</h5>
+                <p>
+                    To familiarize myself with Peerdea, the codebase, version control with Git, React Native, and Expo, my first task for Peerdea was to 
+                    improve a few general user interface elements. For example, in the user profile page, where the user can edit information such as their 
+                    bio or goal, both the text box and text were originally quite small and difficult to access. To resolve these issues, I widened the size 
+                    of the input area to make more space for typing, and increased the font size to make it easier to read.
+                </p>
+                <img class="peerdea_screenshot" src="images/peerdea/bio_before.jpg" alt="Before picture for bio screen">
+                <img class="peerdea_screenshot" src="images/peerdea/bio_after.jpg" alt="After picture for bio screen">
+            </span>
+            <span>
+                <h5>Feedback Prioritization</h5>
+                <p>
+                    On the “Feedback” page, where users of a group can create various types of posts (plain text, with image, polls, or a combination of the 
+                    three) to receive feedback, the posts were originally placed in reverse chronological order, with the newest post at the very top. Although 
+                    this is an intuitive way to view feedback posts, if there are posts that have not yet received feedback, they will be further down on the page, 
+                    and as time goes on, they will be unlikely to receive responses.
+                </p>
+                <p>
+                    To tackle this issue and find how posts should be prioritized, I researched how other social media platforms prioritize certain posts to 
+                    better understand the topic of social media feed algorithms. Although these algorithms accounted for many factors, Peerdea has relatively less 
+                    posts in each group so it did not need as complicated of algorithms. Therefore, I started to brainstorm with Yasmine on how to prioritize posts 
+                    and what it means for a post to be prioritized. The ideas for post prioritization were various combinations of factors such as the number of likes, 
+                    comments, and time since the post was posted. In the end, we decided that regular posts between a week and three weeks old and have no comments should 
+                    be prioritized and that if the post is a poll but has no poll responses in that timeframe, then it should also be prioritized.
+                </p>
+                <p>Before:</p>
+                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_before1.jpg" alt="Before picture for feedback screen">
+                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_before2.jpg" alt="Before picture for feedback screen">
+                <p>After:</p>
+                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_after1.jpg" alt="After picture for feedback screen">
+                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_after2.jpg" alt="After picture for feedback screen">
+            </span>
+            <span>
+                <h5>Accessibility in Peerdea</h5>
+                <p>
+                    When I started working on Peerdea, most of the features were already implemented. Therefore, to prepare Peerdea for larger scale deployment, we wanted 
+                    to make sure that Peerdea is accessible. To tackle this, I explored the w3 guidelines that native applications should follow to ensure accessibility for 
+                    a wide range of users. Although there were many possible changes to make, I spoke with Yi-Hao Peng, a 2nd year PhD student, who has experience with visual 
+                    accessibility. He informed us which parts of Peerdea were inaccessible, helping me discover which parts of Peerdea to focus on first, which included adding 
+                    alt text to images and taking into consideration the gesture used for screen readers and how it might conflict with gestures used in the app.
+                </p>
+            </span>
+        </div>
+        
+        <h4 class="expSection">Skills Learned</h4>
+        <div>
+            <ul>
+                <li>Github/Git (Version Control)</li>
+                <li>React/React Native</li>
+                <li>Expo</li>
+                <li>GraphQL</li>
+            </ul>
+            <p>
+                Before working on Peerdea, my only experience with development was from in-class activities. While they were helpful, they could not satisfy my curiosity and 
+                interest with working on an actual native application. When I first began working on Peerdea, there was a steep learning curve as I had to become familiar with 
+                the frameworks and libraries being used on the project. I gradually built up my knowledge and abilities by completing tutorials, referencing documentation, and 
+                looking through the already existing Peerdea codebase. Working on Peerdea truly expands my skill set in areas such as version control, which is crucial in better 
+                organizing and keeping track of work done in a team on a single application, and developing an application with the users in mind.
+            </p>
+        </div>
+
+        <h4 class="expSection">Thoughts and Reflections</h4>
+        <div>
+            <p>
+                During the Fall 2021 semester at Carnegie Mellon University, I worked as a research assistant on Peerdea with Human-Computer Interaction PhD Candidate 
+                <a href="https://ykotturi.github.io/" target="_blank">Yasmine Kotturi</a>. I was originally drawn to the project because of my prior experience with 
+                small businesses owned by minorities as well as my interest in web development and Human-Computer Interaction. This project marked many firsts for me– 
+                the first time working on a larger-scaled development project, first time working with native applications, and my first experience with research.
+            </p>
+            <p>
+                During our peer programming sessions, we would have discussions related to the research aspect of Peerdea on topics such as goal setting and how that 
+                relates to a small business owner’s progress. Through these discussions, we also formulated research discussions, guiding future design and development 
+                considerations for Peerdea. Additionally, following human-centered design guidelines, I witnessed how research affects the decisions made towards Peerdea’s 
+                designs, leading me to think more about the user while implementing different features. I constantly asked myself questions such as, “If I were using this 
+                particular feature in this app, what would I like to see included?” However, besides considering the user’s point of view, I also found it essential to 
+                test new features and have different perspectives analyze any changes since every user is bound to have a different experience. Instead of coding with 
+                simply my class-based knowledge, I needed to consider more diverse groups of users and be ready for reiterating on particular features. Overall, working 
+                on Peerdea was a great experience for me, as I was able to develop my own skills and explore Human-Computer Interaction research, which proved to be 
+                incredibly engaging.
+            </p>
+        </div>
+
+        </div>
+        <footer>
+            &copy; Clara Lam<br/>
+        </footer>
+    </div>
+</body>
+</html>

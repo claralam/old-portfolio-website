@@ -4,7 +4,7 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 100%;
-    line-height: 1.7em;
+    line-height: 1.5em;
     color: #000000;
 }
 
@@ -24,7 +24,7 @@ a:hover {
     letter-spacing: -2px;
 }
 
-#top_row h3 {
+#top_row h2 {
     font-size: 1.125em;
     font-weight: 200;
 }
@@ -92,10 +92,23 @@ a:hover {
     border-right: 1px dotted #ccc;
 }
 
-#content h3 {
+h3 {
     font-family: Georgia, serif;
     font-size: 1.5em;
     margin: 30px 0 10px 0;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1.15em;
     font-weight: normal;
 }
 
@@ -192,4 +205,12 @@ iframe {
 
 .expSection {
     clear: both
+}
+
+#headshot {
+    max-width: 35%;
+}
+
+#bio-para {
+    padding: 10px 10px 10px 10px;
 }

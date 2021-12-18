@@ -22,7 +22,7 @@
     <div id="container">
         <div id="top_row">
             <header>
-                <h1>Clara Lam</h1>
+                <h1><a href="index.html">Clara Lam</a></h1>
                 <h2>Carnegie Mellon University, Information Systems</h2>
             </header>
 
@@ -35,8 +35,8 @@
 
         <div>
         <h3>Peerdea</h3>
-        <h4 class="expSection">What is Peerdea?</h4>
-        <div>
+        <h4>What is Peerdea?</h4>
+        <div class="expSection">
             <p>
                 With more people online than ever, creative small business owners and entrepreneurs are transitioning to social commerce– 
                 selling their products on social media platforms such as Instagram or TikTok. However, there are unique challenges that 
@@ -49,8 +49,7 @@
                 crucial as it often results in higher quality work than when an idea receives feedback at later stages. Another common reason 
                 large social media platforms are not ideal for feedback is that the audience is too broad for more focused responses, which resulted 
                 in analyses that were not too helpful or relevant.
-            </p>
-            <p>
+                <br><br>
                 Thus, to alleviate this problem, Peerdea was developed as a native application that allows creative small business owners and 
                 entrepreneurs to remotely exchange feedback in the early stages of their idea development. Users are encouraged to create and 
                 join peer feedback groups, where they can feel safe to share their early-stage ideas and products with peers, who are also likely to 
@@ -58,13 +57,16 @@
                 high-quality feedback and capped group sizes to ensure small, safe, trustworthy spaces for entrepreneurs. Through Peerdea, entrepreneurs 
                 can seek, give, and receive feedback to better support and grow their creative business endeavors and entrepreneurship overall. 
             </p>
-            <img class="peerdea_screenshot" src="images/peerdea/share_concept.jpg" alt="Peerdea share concepts page">
-            <img class="peerdea_screenshot" src="images/peerdea/feedback_assist.jpg" alt="Peerdea feedback assistance">
+            <!-- <figure> -->
+                <img class="peerdea_screenshot" src="images/peerdea/share_concept.jpg" alt="Peerdea share concepts page">
+                <!-- <figcaption>Image caption: Peerdea's Share Cocncepts page, where people can create posts for their ideas.</figcaption> -->
+            <!-- </figure> -->
+            <!-- <img class="peerdea_screenshot" src="images/peerdea/feedback_assist.jpg" alt="Peerdea feedback assistance"> -->
         </div>
         
-        <h4 class="expSection">Specific Issues Worked On</h4>
-        <div>
-            <span>
+        <h4>Specific Issues Worked On</h4>
+        <div class="expSection">
+            <span class="subSection">
                 <h5>General UI Improvements</h5>
                 <p>
                     To familiarize myself with Peerdea, the codebase, version control with Git, React Native, and Expo, my first task for Peerdea was to 
@@ -72,18 +74,17 @@
                     bio or goal, both the text box and text were originally quite small and difficult to access. To resolve these issues, I widened the size 
                     of the input area to make more space for typing, and increased the font size to make it easier to read.
                 </p>
-                <img class="peerdea_screenshot" src="images/peerdea/bio_before.jpg" alt="Before picture for bio screen">
                 <img class="peerdea_screenshot" src="images/peerdea/bio_after.jpg" alt="After picture for bio screen">
+                <img class="peerdea_screenshot" src="images/peerdea/bio_before.jpg" alt="Before picture for bio screen">
             </span>
-            <span>
+            <span class="subSection">
                 <h5>Feedback Prioritization</h5>
                 <p>
                     On the “Feedback” page, where users of a group can create various types of posts (plain text, with image, polls, or a combination of the 
                     three) to receive feedback, the posts were originally placed in reverse chronological order, with the newest post at the very top. Although 
                     this is an intuitive way to view feedback posts, if there are posts that have not yet received feedback, they will be further down on the page, 
                     and as time goes on, they will be unlikely to receive responses.
-                </p>
-                <p>
+                    <br><br>
                     To tackle this issue and find how posts should be prioritized, I researched how other social media platforms prioritize certain posts to 
                     better understand the topic of social media feed algorithms. Although these algorithms accounted for many factors, Peerdea has relatively less 
                     posts in each group so it did not need as complicated of algorithms. Therefore, I started to brainstorm with Yasmine on how to prioritize posts 
@@ -91,14 +92,18 @@
                     comments, and time since the post was posted. In the end, we decided that regular posts between a week and three weeks old and have no comments should 
                     be prioritized and that if the post is a poll but has no poll responses in that timeframe, then it should also be prioritized.
                 </p>
-                <p>Before:</p>
-                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_before1.jpg" alt="Before picture for feedback screen">
-                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_before2.jpg" alt="Before picture for feedback screen">
-                <p>After:</p>
-                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_after1.jpg" alt="After picture for feedback screen">
-                <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_after2.jpg" alt="After picture for feedback screen">
+                <!-- <span class="subImg">
+                    <p>Before:</p>
+                    <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_before2.jpg" alt="Before picture for feedback screen">
+                    <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_before1.jpg" alt="Before picture for feedback screen">
+                </span> -->
+                <!-- <span class="secondRowImg"> -->
+                    <!-- <p>After:</p> -->
+                    <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_after2.jpg" alt="After picture for feedback screen">
+                    <img class="peerdea_screenshot" src="images/peerdea/feedback_priority_after1.jpg" alt="After picture for feedback screen">
+                <!-- </span> -->
             </span>
-            <span>
+            <span class="subSection noImg">
                 <h5>Accessibility in Peerdea</h5>
                 <p>
                     When I started working on Peerdea, most of the features were already implemented. Therefore, to prepare Peerdea for larger scale deployment, we wanted 
@@ -110,8 +115,8 @@
             </span>
         </div>
         
-        <h4 class="expSection">Skills Learned</h4>
-        <div>
+        <h4>Skills Learned</h4>
+        <div class="expSection noImg">
             <ul>
                 <li>Github/Git (Version Control)</li>
                 <li>React/React Native</li>
@@ -127,8 +132,8 @@
             </p>
         </div>
 
-        <h4 class="expSection">Thoughts and Reflections</h4>
-        <div>
+        <h4>Thoughts and Reflections</h4>
+        <div class="expSection noImg">
             <p>
                 During the Fall 2021 semester at Carnegie Mellon University, I worked as a research assistant on Peerdea with Human-Computer Interaction PhD Candidate 
                 <a href="https://ykotturi.github.io/" target="_blank">Yasmine Kotturi</a>. I was originally drawn to the project because of my prior experience with 

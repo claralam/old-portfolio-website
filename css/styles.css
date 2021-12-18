@@ -22,6 +22,11 @@ a:hover {
     color: #79B586;
     font-size: 3.75em;
     letter-spacing: -2px;
+    display: block;
+}
+
+#top_row h1 a:hover {
+    text-decoration: none;
 }
 
 #top_row h2 {
@@ -93,19 +98,21 @@ a:hover {
 }
 
 #content h4 {
-    margin: 20px 0 10px 0;
+    margin: 20px 0px;
     font-size: 1.25em;
 }
 
 h3 {
-    font-family: Georgia, serif;
     font-size: 1.5em;
     margin: 30px 0 10px 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 h4 {
     font-size: 1.5em;
+    clear: both;
+    padding-top: 20px;
+    margin: 20px 0px;
 }
 
 h5 {
@@ -203,13 +210,65 @@ iframe {
 }
 
 .peerdea_screenshot {
-    max-width: 25%;
     padding: 10px 10px 10px 10px;
     border: 1px solid #000000;
 }
 
-.expSection {
-    clear: both
+.expSection p {
+    width: 70%;
+    float: left;
+}
+
+/* .expSection figure {
+    display: contents;
+} */
+
+.expSection img {
+    width: 25%;
+    margin: -90px 10px 10px 25px;
+    border-radius: 20px;
+    float: right;
+}
+
+.expSection figcaption {
+    color: gray;
+    font-size: 0.95em;
+}
+
+.subSection {
+    display: inline-block;
+    clear: both;
+}
+
+.subSection p {
+    width: 40%;
+    float: left;
+}
+
+.subImg p {
+    width: 30%;
+    padding: 0px 10px 10px 0px;
+}
+
+.subImg img {
+    margin: 0px 10px 10px 25px;
+    float: left;
+}
+
+.secondRowImg p {
+    width: 35%;
+    padding: 0px 10px 10px 0px;
+    text-align: right;
+    text-align: right;
+}
+
+.secondRowImg img {
+    margin: 30px 10px 10px 25px;
+    float: right;
+}
+
+.subSectionNoImg p {
+    max-width: 100%;
 }
 
 #headshot {
@@ -221,18 +280,18 @@ iframe {
 }
 
 .experienceCard {
-    border: 1px solid #dbdbdb;
+    border: 1px solid #eeeeee;
     border-radius: 25px;
-    background: #dbdbdb;
+    background: #eeeeee;
     padding: 10px 20px 10px 20px;
     margin: 30px 0px;
-}
-
-.experienceCard h4 a {
-    display: block;
 }
 
 .experienceCard:hover {
     box-shadow: 5px 5px #c0c0c0;
     cursor: pointer;
+}
+
+.noImg p {
+    width: 100%;
 }

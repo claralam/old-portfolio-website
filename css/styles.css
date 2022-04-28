@@ -1,300 +1,180 @@
-/* CSS Document */
-/* Styles*/
+/* Home Page */
 
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
-    font-size: 100%;
-    line-height: 1.5em;
-    color: #000000;
+.navbar {
+    padding: 2em 5em;
 }
+
+#navbarSupportedContent {
+    margin-right: 0em;
+}
+
+#home-banner {
+    max-width: 100%;
+    padding: 10em 0;
+    justify-content: center;
+}
+
+.intro-text {
+    margin: auto 4em;
+    font-size: 1.75em;
+}
+
+.featured-projects .card {
+    margin: 5em 0;
+    clear: both;
+}
+
+.featured-projects .card h2 {
+    float: left;
+}
+
+.featured-projects p {
+    clear: both;
+}
+
+.view-project-link {
+    float: right;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+ion-icon {
+    transform: scale(1.5);
+    margin: 1em 2em;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+/* Projects Page */
+
+.projects .card{
+    margin: 2em 0;
+    clear: both;
+}
+
+/* Project Detail Page */
+.project-banner {
+    max-width: 100%;
+    margin: 4em 0;
+    justify-content: center;
+}
+
+.project-skills {
+    margin: 3em 0;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.project-skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-details {
+    margin: 5em auto;
+}
+
+.detail {
+    margin: 3em auto;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.about-me-banner {
+    margin: 5em auto;
+    justify-content: center;
+}
+
+.about-me-details {
+    margin: 5em 20%;
+}
+
+.align-bottom {
+    
+}
+
+/* Contacts Page */
+
+.contact-info {
+    margin: 1em 0;
+}
+
+.contact-info span {
+    margin: 0;
+    padding: 0;
+    margin-top: 1%;
+}
+
+/* Other CSS */
 
 a {
-    color: #79B586;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #79B586;
-    text-decoration: underline;
-}
-
-#top_row h1 {
-    color: #79B586;
-    font-size: 3.75em;
-    letter-spacing: -2px;
-    display: block;
-}
-
-#top_row h1 a:hover {
-    text-decoration: none;
-}
-
-#top_row h2 {
-    font-size: 1.125em;
-    font-weight: 200;
-}
-
-#bio {
-    margin-left: 3em;
-}
-
-#bio a {
-    text-decoration: none;
-    border-bottom: 1px dotted #000;
-    color: #000;
-}
-
-#bio a:hover {
-    color: #79B586;
-}
-
-#container {
-    width: 70%;
-    margin: 10px auto;
-}
-
-#top_row {
-    border-bottom: 1px dotted #ccc;
-    padding: .5em .5em 3em .5em;
-}
-
-#top_row header {
-    margin-bottom: -2.5em;
-}
-
-#top_row nav {
-    float: right;
-}
-
-#top_row nav a {
-    font-size: 1.25em;
-    font-weight: 400;
-    padding: 15px;
     color: #000000;
 }
 
-#top_row nav a.selected {
-    background: #f6f6f6;
-    color: #bbbbbb;
+/* CSS Animations */
+
+#home-banner {
+    animation: fadeInAnimation ease 3s
 }
 
-#top_row nav a.selected:hover {
-    background: #f6f6f6;
-    color: #bbbbbb;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#top_row nav a:hover {
-    background: #f6f6f6;
-    color: #79B586;
-}
-
-#content {
-    float: left;
-    width: 70%;
-    margin: 0;
-    padding: 1em;
-    border-right: 1px dotted #ccc;
-}
-
-#content-contactpage {
-    float: left;
-    margin: 0;
-    padding: 1em;
-}
-
-#content h4 {
-    margin: 20px 0px;
-    font-size: 1.25em;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin: 30px 0 10px 0;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 1.5em;
-    clear: both;
-    padding-top: 20px;
-    margin: 20px 0px;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
-    font-size: 1.15em;
-    font-weight: normal;
-}
-
-#content img {
-    float: left;
-    margin: 1em;
-}
-
-#sidebar {
-    float: right;
-}
-
-#sidebar h3 {
-    font-size: 1.125em;
-    border-bottom: 1px dotted #ccc;
-}
-
-footer {
-    clear: both;
-    margin: 0;
-    padding: .5em;
-    color: #333333;
-    font-variant: small-caps;
-    font-size: .813em;
-    text-align: center;
-    border-top: 1px dotted #cccccc;
-}
-
-#content table {
-    width: 75%;
-    border: 3px solid #9BE8AC;
-    margin-left: auto;
-    margin-right: auto;
-    table-layout: auto;
-    border-spacing: 0px;
-    padding: 3px;
-}
-
-#content th {
-    height: 40px;
-    font-weight: bold;
-    padding: 2px;
-    text-align: center;
-    border: 1px solid #333333;
-}
-
-#content td {
-    padding: 2px;
-    text-align: center;
-    border: 1px solid #333333;
-}
-
-#content form {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #9BE8AC;
-    padding: 10px 10px 10px 10px;
-}
-
-#content legend {
-    font-weight: bold;
-    text-align: center;
-    color: #666666;
-    margin-bottom: 5px;
-}
-
-#content label {
-    font-weight: bold;
-    text-align: center;
-}
-
-html {
-    overflow-y: scroll;
-}
-
-iframe {
-    display: block;
-    margin: auto;
-}
-
-.responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-.peerdea_screenshot {
-    padding: 10px 10px 10px 10px;
-    border: 1px solid #000000;
-}
-
-.expSection p {
-    width: 70%;
-    float: left;
-}
-
-/* .expSection figure {
-    display: contents;
-} */
-
-.expSection img {
-    width: 25%;
-    margin: -90px 10px 10px 25px;
-    border-radius: 20px;
-    float: right;
-}
-
-.expSection figcaption {
-    color: gray;
-    font-size: 0.95em;
-}
-
-.subSection {
-    display: inline-block;
-    clear: both;
-}
-
-.subSection p {
-    width: 40%;
-    float: left;
-}
-
-.subImg p {
-    width: 30%;
-    padding: 0px 10px 10px 0px;
-}
-
-.subImg img {
-    margin: 0px 10px 10px 25px;
-    float: left;
-}
-
-.secondRowImg p {
-    width: 35%;
-    padding: 0px 10px 10px 0px;
-    text-align: right;
-    text-align: right;
-}
-
-.secondRowImg img {
-    margin: 30px 10px 10px 25px;
-    float: right;
-}
-
-.subSectionNoImg p {
-    max-width: 100%;
-}
-
-#headshot {
-    max-width: 35%;
-}
-
-#bio-para {
-    padding: 10px 10px 10px 10px;
-}
-
-.experienceCard {
-    border: 1px solid #eeeeee;
-    border-radius: 25px;
-    background: #eeeeee;
-    padding: 10px 20px 10px 20px;
-    margin: 30px 0px;
-}
-
-.experienceCard:hover {
+.card:hover {
     box-shadow: 5px 5px #c0c0c0;
     cursor: pointer;
 }
 
-.noImg p {
+/* https://github.com/codrops/LineHoverStyles/ */
+
+/* .navbar .navbar-collapse#navbarSupportedContent .navbar-nav .navbar-link::before {
+    content: '';
+} */
+
+
+.navbar .navbar-collapse#navbarSupportedContent .navbar-nav .nav-link {
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.navbar .navbar-collapse#navbarSupportedContent .navbar-nav .nav-link::before,
+.navbar .navbar-collapse#navbarSupportedContent .navbar-nav .nav-link::after {
+    position: absolute;
     width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+
+.navbar .navbar-collapse#navbarSupportedContent .navbar-nav .nav-link::before {
+    content: '';
+    color: green;
+    transform-origin: 100% 50%; 
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.navbar .navbar-collapse#navbarSupportedContent .navbar-nav .nav-link:hover::after {
+    content: '';
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
 }

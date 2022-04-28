@@ -18,6 +18,16 @@ body {
     justify-content: center;
 }
 
+h1 {
+    font-weight: 900;
+    color:#FFC30B;
+}
+
+h2 {
+    font-weight: 900;
+    color:#FFC30B;
+}
+
 .intro-text {
     margin: auto 4em;
     font-size: 1.75em;
@@ -28,7 +38,7 @@ body {
     clear: both;
 }
 
-.featured-projects .card h2 {
+.featured-projects .card h3 {
     float: left;
 }
 

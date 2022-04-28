@@ -266,13 +266,13 @@ a:focus-visible {
 .link--leda {
     overflow: hidden;
     line-height: 2;
-    font-family: orpheuspro, serif;
+    /* font-family: orpheuspro, serif; */
     font-weight: 700;
 }
 
 .link--leda::before {
     height: 2px;
-    top: calc(100% - 5px);
+    top: calc(100%);
     transform-origin: 100% 50%;
     transform: scale3d(0, 1, 1);
     transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);

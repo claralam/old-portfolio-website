@@ -1,4 +1,6 @@
-*,
+/* https://github.com/codrops/LineHoverStyles/ */
+
+/* *,
 *::after,
 *::before {
     box-sizing: border-box;
@@ -20,7 +22,7 @@ body {
     font-family: europa, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 /* Page Loader */
 .js .loading::before,
@@ -185,7 +187,7 @@ a:focus-visible {
 }
 
 .link--metis {
-    font-family: bely-display, sans-serif;
+    /* font-family: bely-display, sans-serif; */
     text-transform: lowercase;
 }
 
@@ -334,10 +336,10 @@ a:focus-visible {
     transform: scale3d(1.1, 1.1, 1.1);
 }
 
-.link--elara {
+/* .link--elara {
     font-family: aktiv-grotesk-extended, sans-serif;
     font-size: 1.375rem;
-}
+} */
 
 .link--elara::before {
     transform-origin: 50% 100%;
@@ -356,6 +358,7 @@ a:focus-visible {
 }
 
 .link--elara:hover span {
+    font-weight: bold;
     transform: translate3d(0, -2px, 0);
 }
 
